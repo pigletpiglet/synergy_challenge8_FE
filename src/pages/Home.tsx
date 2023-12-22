@@ -6,19 +6,13 @@ import { useEffect, useState } from 'react';
 import { saveToken } from '../redux/slices/token';
 import { useNavigate } from 'react-router-dom';
 
-interface UserEntity {
-  id: number;
-  name: string;
-  email: string;
-  profile_picture_url: string;
-}
+
 
 
 
 export default function Home() {
 
-  const api_base_url = 'http://localhost:8082';
-  const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
+  const [, setIsLoggedIn] = useState<boolean>(false);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 

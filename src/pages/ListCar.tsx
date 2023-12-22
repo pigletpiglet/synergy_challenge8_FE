@@ -30,7 +30,7 @@ export default function ListCar() {
     const [cars, setCars] = useState<CarEntity[]>([]);
 
     const api_base_url = 'http://localhost:8082';
-    const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
+    const [, setIsLoggedIn] = useState<boolean>(false);
     const [itemId, setItemId] = useState(0);
     const dispatch = useDispatch();
     const navigate = useNavigate();
@@ -229,8 +229,8 @@ export default function ListCar() {
                                             Authorization: `Bearer ${localStorage.getItem('access_token')}`
                                         },
                                     });
-                                    const responseJSON = await response.json();
-                                    let carIndex = cars.findIndex(car => car.id === itemId)
+                                    await response.json();
+                                    const carIndex = cars.findIndex(car => car.id === itemId)
                                     carIndex >= 1 ? cars.splice(carIndex) : null;
                                     setShowModal(false);
                                     alert("Succesfuly Deleted")

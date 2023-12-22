@@ -1,15 +1,9 @@
-import { useState } from 'react'
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon } from '@heroicons/react/24/outline'
 
 
-interface tokenInitialState {
-  token: string;
-}
 
 export default function Header() {
 
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
     <header className="absolute inset-x-0 top-0 z-50">
