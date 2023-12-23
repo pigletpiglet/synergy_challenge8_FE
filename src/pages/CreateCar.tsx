@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
-const api_base_url = 'http://localhost:8082';
+const api_base_url = 'https://synergychallenge8be-production.up.railway.app';
 
 export default function CreateCar() {
   const navigate = useNavigate();

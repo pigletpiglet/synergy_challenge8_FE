@@ -29,7 +29,7 @@ interface CarEntity {
 export default function ListCar() {
     const [cars, setCars] = useState<CarEntity[]>([]);
 
-    const api_base_url = 'http://localhost:8082';
+    const api_base_url = 'https://synergychallenge8be-production.up.railway.app';
     const [, setIsLoggedIn] = useState<boolean>(false);
     const [itemId, setItemId] = useState(0);
     const dispatch = useDispatch();

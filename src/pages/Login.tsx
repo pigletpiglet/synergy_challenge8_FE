@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { GoogleLogin, GoogleOAuthProvider } from '@react-oauth/google';
 
-const api_base_url = 'http://localhost:8082';
+const api_base_url = 'https://synergychallenge8be-production.up.railway.app';
 interface GoogleOauthResponse {
   credential?: string;
 }

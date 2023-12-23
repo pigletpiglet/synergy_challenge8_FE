@@ -19,7 +19,7 @@ interface CarEntity {
 export default function Dashboard() {
     const [cars, setCars] = useState<CarEntity[]>([]);
 
-    const api_base_url = 'http://localhost:8082';
+    const api_base_url = 'https://synergychallenge8be-production.up.railway.app';
     const [, setIsLoggedIn] = useState<boolean>(false);
     const dispatch = useDispatch();
     const navigate = useNavigate();
